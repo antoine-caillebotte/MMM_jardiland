@@ -5,6 +5,7 @@ __pycache__/
 # Virtual environments
 .venv/
 .env
+config.ini
 
 # Build and packaging
 build/
@@ -29,3 +30,5 @@ logs/
 
 # Personal files
 test.*
+data/tmp_*
+pptx_data/
