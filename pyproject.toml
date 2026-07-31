@@ -1,5 +1,5 @@
 [project]
-name = "refashion"
+name = "jardiland"
 version = "0.1.0"
 description = ""
 authors = [
@@ -8,21 +8,15 @@ authors = [
 
 requires-python = ">=3.12, <3.15"
 dependencies = [
-    "mmm-utils @ file:///home/acaillebotte/projects/MMM/mmm_utils",
-    "mmm-pptx @ file:///home/acaillebotte/projects/MMM/mmm_pptx",
+    "mmm-pipeline @ git+ssh://git@github.com:antoine-caillebotte/mmm_pipeline.git@v0.2.0",
     "pymongo (>=4.17.0,<5.0.0)",
     "numpyro (>=0.21.0,<0.22.0)",
     "arviz (>=1.2.0,<2.0.0)",
 ]
 
-
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.dependencies]
-mmm-utils = {develop = true}
-mmm-pptx = {develop = true}
 
 [dependency-groups]
 dev = [
