@@ -1,17 +1,9 @@
 import pandas as pd
-from datetime import date, datetime
-from dotenv import load_dotenv
-import os
-
-from pyprojroot import here
-
 import numpy as np
 import pandas as pd
-from sqlalchemy import create_engine, text
 
 from mmm_pipeline import DataCreator, compute_spend_distribution
 from mmm_pipeline.holidays import create_holiday_columns
-
 
 def create_dataset(
     filename: str, db_config, dirpath: str, safe_mode: bool = True
