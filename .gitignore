@@ -5,7 +5,7 @@ __pycache__/
 # Virtual environments
 .venv/
 .env
-config.ini
+
 
 # Build and packaging
 build/
@@ -32,3 +32,7 @@ logs/
 test.*
 data/tmp_*
 pptx_data/
+config.ini
+pipeline*
+.conv*
+.model*
